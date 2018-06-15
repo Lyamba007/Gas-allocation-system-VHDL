@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XML>
+ <document type="stimulators" version="1">
+  <set name="ASDB Stimulators" active="1">
+   <stimulator>
+    <signal_path value="/GAS_Diagnostic_Device/clk"/>
+    <rawdescription value="CLK:FRM:Override:100.000000;2;1;0;50;1:Clock:1:"/>
+   </stimulator>
+   <stimulator>
+    <signal_path value="/GAS_Diagnostic_Device/reset"/>
+    <rawdescription value="FRM:FRM:Override:1 0 ns, 0 60 ns:Formula:0:"/>
+   </stimulator>
+  </set>
+ </document>
+</XML>

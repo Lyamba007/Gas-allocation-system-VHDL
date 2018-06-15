@@ -1,0 +1,15 @@
+.\src\Workstation.vhd
+.\src\MUX_2_in_1.vhd
+.\src\OA.vhd
+.\src\GAS_graph.asf
+.\src\GAS_FSM\GAS_FSM.vhd
+.\src\GAS_Diagnostic_Device\State coding.vhd
+.\src\GAS_Diagnostic_Device\Bits coding.vhd
+.\src\GAS_Diagnostic_Device\Shift register.vhd
+.\src\TestBench\gas_dd_fsm_bits_coding.vhd
+.\src\TestBench\gas_dd_fsm_state_coding.vhd
+.\src\TestBench\gas_diagnostic_device_shift_register.vhd
+.\src\Additional folder\array example.vhd
+.\src\Additional folder\ACS_172.vhd
+.\src\Additional folder\ACS_172_Standard.vhd
+.\src\Additional folder\ACS_172_FSM.vhd

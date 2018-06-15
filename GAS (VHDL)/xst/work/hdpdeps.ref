@@ -1,0 +1,19 @@
+V3 12
+FL D:/HDL_designs/Diploma/ACS_172.vhd 2018/02/09.13:31:20 P.15xf
+AR work/Workstation/Workstation 1518175538 FL D:/HDL_designs/Diploma/ACS_172.vhd \
+      EN work/Workstation 1518175537 CP GAS_Diagnostic_Device CP GAS_FSM
+PH work/heap_arr_pkg 1518175915 \
+      FL D:/HDL_designs/Diploma/ACS_172.vhd PB ieee/std_logic_1164 1335251622
+EN work/GAS_Diagnostic_Device 1518175916 \
+      FL D:/HDL_designs/Diploma/ACS_172.vhd PB ieee/std_logic_1164 1335251622 \
+      PB ieee/std_logic_arith 1335251623 PB ieee/STD_LOGIC_UNSIGNED 1335251625 \
+      PH work/heap_arr_pkg 1518175915
+AR work/GAS_Diagnostic_Device/arch 1518175917 \
+      FL D:/HDL_designs/Diploma/ACS_172.vhd EN work/GAS_Diagnostic_Device 1518175916
+FL D:/HDL_designs/Diploma/GAS_Diagnostic_Device.vhd 2018/02/09.13:25:18 P.15xf
+FL D:/HDL_designs/Diploma/GAS_FSM.vhd 2018/02/09.13:22:08 P.15xf
+EN work/GAS_FSM 1518175535 FL D:/HDL_designs/Diploma/GAS_FSM.vhd \
+      PB ieee/std_logic_1164 1335251622 PB ieee/std_logic_arith 1335251623 \
+      PB ieee/STD_LOGIC_UNSIGNED 1335251625
+AR work/GAS_FSM/GAS_FSM_arch 1518175536 \
+      FL D:/HDL_designs/Diploma/GAS_FSM.vhd EN work/GAS_FSM 1518175535

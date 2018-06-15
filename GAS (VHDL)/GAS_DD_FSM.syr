@@ -1,0 +1,390 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: GAS_DD_FSM.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GAS_DD_FSM.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GAS_DD_FSM"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : GAS_DD_FSM
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/HDL_designs/Diploma/ACS_172.vhd" in Library work.
+Entity <gas_dd_fsm> compiled.
+Entity <gas_dd_fsm> (Architecture <arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GAS_DD_FSM> in library <work> (architecture <arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <GAS_DD_FSM> in library <work> (Architecture <arch>).
+Entity <GAS_DD_FSM> analyzed. Unit <GAS_DD_FSM> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <GAS_DD_FSM>.
+    Related source file is "D:/HDL_designs/Diploma/ACS_172.vhd".
+WARNING:Xst:646 - Signal <DD<1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DD<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <DD<10>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <State>.
+    -----------------------------------------------------------------------
+    | States             | 9                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0001                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit register for signal <DD>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  10 D-type flip-flop(s).
+Unit <GAS_DD_FSM> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 10-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <State/FSM> on signal <State[1:9]> with one-hot encoding.
+--------------------
+ State | Encoding
+--------------------
+ 0001  | 000000001
+ 0010  | 000000010
+ 0011  | 000000100
+ 0100  | 000001000
+ 0101  | 000010000
+ 0110  | 000100000
+ 0111  | 001000000
+ 1000  | 010000000
+ 1001  | 100000000
+--------------------
+WARNING:Xst:2677 - Node <DD_10> of sequential type is unconnected in block <GAS_DD_FSM>.
+WARNING:Xst:2677 - Node <DD_3> of sequential type is unconnected in block <GAS_DD_FSM>.
+WARNING:Xst:2677 - Node <DD_1> of sequential type is unconnected in block <GAS_DD_FSM>.
+WARNING:Xst:2677 - Node <DD_10> of sequential type is unconnected in block <GAS_DD_FSM>.
+WARNING:Xst:2677 - Node <DD_3> of sequential type is unconnected in block <GAS_DD_FSM>.
+WARNING:Xst:2677 - Node <DD_1> of sequential type is unconnected in block <GAS_DD_FSM>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Registers                                            : 7
+ Flip-Flops                                            : 7
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <GAS_DD_FSM> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GAS_DD_FSM, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GAS_DD_FSM.ngr
+Top Level Output File Name         : GAS_DD_FSM
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 20
+
+Cell Usage :
+# BELS                             : 15
+#      GND                         : 1
+#      LUT2                        : 8
+#      LUT2_L                      : 1
+#      LUT4                        : 5
+# FlipFlops/Latches                : 16
+#      FDE                         : 7
+#      FDR                         : 8
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 8
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       10  out of   4656     0%  
+ Number of Slice Flip Flops:             16  out of   9312     0%  
+ Number of 4 input LUTs:                 14  out of   9312     0%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  17  out of    232     7%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 16    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 2.964ns (Maximum Frequency: 337.388MHz)
+   Minimum input arrival time before clock: 2.780ns
+   Maximum output required time after clock: 5.255ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.964ns (frequency: 337.388MHz)
+  Total number of paths / destination ports: 30 / 9
+-------------------------------------------------------------------------
+Delay:               2.964ns (Levels of Logic = 2)
+  Source:            State_FSM_FFd9 (FF)
+  Destination:       State_FSM_FFd9 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: State_FSM_FFd9 to State_FSM_FFd9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              2   0.514   0.532  State_FSM_FFd9 (State_FSM_FFd9)
+     LUT4:I0->O            1   0.612   0.426  State_FSM_FFd9-In16 (State_FSM_FFd9-In16)
+     LUT4:I1->O            1   0.612   0.000  State_FSM_FFd9-In39 (State_FSM_FFd9-In)
+     FDS:D                     0.268          State_FSM_FFd9
+    ----------------------------------------
+    Total                      2.964ns (2.006ns logic, 0.958ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 23 / 23
+-------------------------------------------------------------------------
+Offset:              2.780ns (Levels of Logic = 1)
+  Source:            reset (PAD)
+  Destination:       State_FSM_FFd3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to State_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.106   0.879  reset_IBUF (reset_IBUF)
+     FDR:R                     0.795          State_FSM_FFd3
+    ----------------------------------------
+    Total                      2.780ns (1.901ns logic, 0.879ns route)
+                                       (68.4% logic, 31.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 14 / 7
+-------------------------------------------------------------------------
+Offset:              5.255ns (Levels of Logic = 2)
+  Source:            State_FSM_FFd6 (FF)
+  Destination:       Yx<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: State_FSM_FFd6 to Yx<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.603  State_FSM_FFd6 (State_FSM_FFd6)
+     LUT2:I0->O            1   0.612   0.357  Yx<2>1 (Yx_2_OBUF)
+     OBUF:I->O                 3.169          Yx_2_OBUF (Yx<2>)
+    ----------------------------------------
+    Total                      5.255ns (4.295ns logic, 0.960ns route)
+                                       (81.7% logic, 18.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.72 secs
+ 
+--> 
+
+Total memory usage is 339680 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    9 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

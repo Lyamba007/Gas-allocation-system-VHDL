@@ -1,0 +1,16 @@
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\Workstation.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\MUX_2_in_1.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\OA.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\array example.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\ACS_172.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\ACS_172_Standard.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\ACS_172_FSM.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\compile\GAS_graph.vhd" VHDL gas_allocation_system 0 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM\GAS_FSM.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_Diagnostic_Device\State coding.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_Diagnostic_Device\Bits coding.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_Diagnostic_Device\Shift register.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\TestBench\gas_dd_fsm_bits_coding.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\TestBench\gas_dd_fsm_state_coding.vhd" VHDL gas_allocation_system 1 0 0 -02
+"I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\TestBench\gas_diagnostic_device_shift_register.vhd" VHDL gas_allocation_system 1 0 0 -02
+. . 0 0 0

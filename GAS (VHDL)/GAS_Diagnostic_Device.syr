@@ -1,0 +1,392 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.48 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.48 secs
+ 
+--> Reading design: GAS_Diagnostic_Device.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GAS_Diagnostic_Device.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GAS_Diagnostic_Device"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : GAS_Diagnostic_Device
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/heap_arr_pkg is now defined in a different file.  It was defined in "D:/HDL_designs/Diploma/GAS_Diagnostic_Device.vhd", and is now defined in "D:/HDL_designs/Diploma/ACS_172.vhd".
+WARNING:HDLParsers:3607 - Unit work/GAS_Diagnostic_Device is now defined in a different file.  It was defined in "D:/HDL_designs/Diploma/GAS_Diagnostic_Device.vhd", and is now defined in "D:/HDL_designs/Diploma/ACS_172.vhd".
+WARNING:HDLParsers:3607 - Unit work/GAS_Diagnostic_Device/arch is now defined in a different file.  It was defined in "D:/HDL_designs/Diploma/GAS_Diagnostic_Device.vhd", and is now defined in "D:/HDL_designs/Diploma/ACS_172.vhd".
+Compiling vhdl file "D:/HDL_designs/Diploma/ACS_172.vhd" in Library work.
+Package <heap_arr_pkg> compiled.
+Entity <gas_diagnostic_device> compiled.
+Entity <gas_diagnostic_device> (Architecture <arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GAS_Diagnostic_Device> in library <work> (architecture <arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <GAS_Diagnostic_Device> in library <work> (Architecture <arch>).
+INFO:Xst:2679 - Register <DD<10>> in unit <GAS_Diagnostic_Device> has a constant value of 0001 during circuit operation. The register is replaced by logic.
+Entity <GAS_Diagnostic_Device> analyzed. Unit <GAS_Diagnostic_Device> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <GAS_Diagnostic_Device>.
+    Related source file is "D:/HDL_designs/Diploma/ACS_172.vhd".
+    Found 36-bit register for signal <DD<1:9>>.
+    Found 4-bit register for signal <NextState>.
+    Found 4-bit register for signal <State>.
+    Summary:
+	inferred  44 D-type flip-flop(s).
+Unit <GAS_Diagnostic_Device> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 11
+ 4-bit register                                        : 11
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <DD_8_3> (without init value) has a constant value of 0 in block <GAS_Diagnostic_Device>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DD_8_2> (without init value) has a constant value of 0 in block <GAS_Diagnostic_Device>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DD_9_3> (without init value) has a constant value of 0 in block <GAS_Diagnostic_Device>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DD_9_2> (without init value) has a constant value of 0 in block <GAS_Diagnostic_Device>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 44
+ Flip-Flops                                            : 44
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <DD_8_3> (without init value) has a constant value of 0 in block <GAS_Diagnostic_Device>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DD_8_2> (without init value) has a constant value of 0 in block <GAS_Diagnostic_Device>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DD_9_3> (without init value) has a constant value of 0 in block <GAS_Diagnostic_Device>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <DD_9_2> (without init value) has a constant value of 0 in block <GAS_Diagnostic_Device>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <DD_7_3> in Unit <GAS_Diagnostic_Device> is equivalent to the following 2 FFs/Latches, which will be removed : <DD_7_2> <DD_9_1> 
+INFO:Xst:2261 - The FF/Latch <DD_6_3> in Unit <GAS_Diagnostic_Device> is equivalent to the following 2 FFs/Latches, which will be removed : <DD_6_2> <DD_8_1> 
+
+Optimizing unit <GAS_Diagnostic_Device> ...
+INFO:Xst:2261 - The FF/Latch <DD_7_1> in Unit <GAS_Diagnostic_Device> is equivalent to the following FF/Latch, which will be removed : <DD_5_3> 
+INFO:Xst:2261 - The FF/Latch <DD_4_3> in Unit <GAS_Diagnostic_Device> is equivalent to the following FF/Latch, which will be removed : <DD_6_1> 
+INFO:Xst:2261 - The FF/Latch <DD_7_1> in Unit <GAS_Diagnostic_Device> is equivalent to the following FF/Latch, which will be removed : <DD_5_3> 
+INFO:Xst:2261 - The FF/Latch <DD_4_3> in Unit <GAS_Diagnostic_Device> is equivalent to the following FF/Latch, which will be removed : <DD_6_1> 
+INFO:Xst:2261 - The FF/Latch <DD_7_1> in Unit <GAS_Diagnostic_Device> is equivalent to the following FF/Latch, which will be removed : <DD_5_3> 
+INFO:Xst:2261 - The FF/Latch <DD_4_3> in Unit <GAS_Diagnostic_Device> is equivalent to the following FF/Latch, which will be removed : <DD_6_1> 
+INFO:Xst:2261 - The FF/Latch <DD_7_1> in Unit <GAS_Diagnostic_Device> is equivalent to the following FF/Latch, which will be removed : <DD_5_3> 
+INFO:Xst:2261 - The FF/Latch <DD_4_3> in Unit <GAS_Diagnostic_Device> is equivalent to the following FF/Latch, which will be removed : <DD_6_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GAS_Diagnostic_Device, actual ratio is 0.
+
+Final Macro Processing ...
+
+Processing Unit <GAS_Diagnostic_Device> :
+	Found 4-bit shift register for signal <DD_2_1>.
+Unit <GAS_Diagnostic_Device> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+# Shift Registers                                      : 1
+ 4-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GAS_Diagnostic_Device.ngr
+Top Level Output File Name         : GAS_Diagnostic_Device
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 19
+#      GND                         : 1
+#      LUT2                        : 1
+#      LUT2_D                      : 1
+#      LUT3                        : 6
+#      LUT4                        : 8
+#      MUXF5                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 35
+#      FD                          : 10
+#      FDR                         : 15
+#      FDS                         : 10
+# Shift Registers                  : 1
+#      SRL16                       : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       23  out of   4656     0%  
+ Number of Slice Flip Flops:             35  out of   9312     0%  
+ Number of 4 input LUTs:                 17  out of   9312     0%  
+    Number used as logic:                16
+    Number used as Shift registers:       1
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    232     4%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 36    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.056ns (Maximum Frequency: 246.536MHz)
+   Minimum input arrival time before clock: 4.051ns
+   Maximum output required time after clock: 7.591ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 4.056ns (frequency: 246.536MHz)
+  Total number of paths / destination ports: 122 / 55
+-------------------------------------------------------------------------
+Delay:               4.056ns (Levels of Logic = 2)
+  Source:            DD_2_2 (FF)
+  Destination:       DD_4_4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DD_2_2 to DD_4_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.514   0.603  DD_2_2 (DD_2_2)
+     LUT2_D:I0->LO         1   0.612   0.103  DD_1_cmp_eq00001_SW0 (N10)
+     LUT4:I3->O           12   0.612   0.817  DD_1_cmp_eq00001_1 (DD_1_cmp_eq000011)
+     FDR:R                     0.795          DD_4_4
+    ----------------------------------------
+    Total                      4.056ns (2.533ns logic, 1.523ns route)
+                                       (62.4% logic, 37.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 26 / 26
+-------------------------------------------------------------------------
+Offset:              4.051ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       DD_4_4 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to DD_4_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.106   0.721  reset_IBUF (reset_IBUF)
+     LUT4:I0->O           12   0.612   0.817  DD_1_cmp_eq00001_1 (DD_1_cmp_eq000011)
+     FDR:R                     0.795          DD_4_4
+    ----------------------------------------
+    Total                      4.051ns (2.513ns logic, 1.537ns route)
+                                       (62.0% logic, 38.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 56 / 7
+-------------------------------------------------------------------------
+Offset:              7.591ns (Levels of Logic = 4)
+  Source:            NextState_2 (FF)
+  Destination:       Yx<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: NextState_2 to Yx<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.514   0.651  NextState_2 (NextState_2)
+     LUT4:I0->O            2   0.612   0.532  Yx<2>11 (N11)
+     LUT3:I0->O            2   0.612   0.532  Yx<2>21 (N4)
+     LUT3:I0->O            1   0.612   0.357  Yx<2>2 (Yx_2_OBUF)
+     OBUF:I->O                 3.169          Yx_2_OBUF (Yx<2>)
+    ----------------------------------------
+    Total                      7.591ns (5.519ns logic, 2.072ns route)
+                                       (72.7% logic, 27.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.60 secs
+ 
+--> 
+
+Total memory usage is 335644 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :   11 (   0 filtered)
+

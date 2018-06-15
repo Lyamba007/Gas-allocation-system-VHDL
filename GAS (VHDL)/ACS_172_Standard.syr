@@ -1,0 +1,387 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: ACS_172_Standard.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ACS_172_Standard.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ACS_172_Standard"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : ACS_172_Standard
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/HDL_designs/Diploma/ACS_172.vhd" in Library work.
+Package <heap_arr_pkg> compiled.
+Entity <acs_172_standard> compiled.
+Entity <acs_172_standard> (Architecture <arch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ACS_172_Standard> in library <work> (architecture <arch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ACS_172_Standard> in library <work> (Architecture <arch>).
+WARNING:Xst:819 - "D:/HDL_designs/Diploma/ACS_172.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <A1>
+WARNING:Xst:819 - "D:/HDL_designs/Diploma/ACS_172.vhd" line 55: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <A1>, <D>, <A2>, <A3>, <A4>, <A5>, <A0>
+Entity <ACS_172_Standard> analyzed. Unit <ACS_172_Standard> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ACS_172_Standard>.
+    Related source file is "D:/HDL_designs/Diploma/ACS_172.vhd".
+WARNING:Xst:647 - Input <D<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <D<5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <A5> is used but never assigned. This sourceless signal will be automatically connected to value 101.
+WARNING:Xst:653 - Signal <A4> is used but never assigned. This sourceless signal will be automatically connected to value 100.
+WARNING:Xst:653 - Signal <A3> is used but never assigned. This sourceless signal will be automatically connected to value 011.
+WARNING:Xst:653 - Signal <A2> is used but never assigned. This sourceless signal will be automatically connected to value 010.
+WARNING:Xst:653 - Signal <A1> is used but never assigned. This sourceless signal will be automatically connected to value 001.
+WARNING:Xst:653 - Signal <A0> is used but never assigned. This sourceless signal will be automatically connected to value 000.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <State> of Case statement line 58 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <State> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <State>.
+WARNING:Xst:737 - Found 6-bit latch for signal <NextState>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 6-bit register for signal <State>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <ACS_172_Standard> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ 1-bit register                                        : 6
+# Latches                                              : 1
+ 6-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+# Latches                                              : 1
+ 6-bit latch                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ACS_172_Standard> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ACS_172_Standard, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ACS_172_Standard.ngr
+Top Level Output File Name         : ACS_172_Standard
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 22
+#      GND                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 4
+#      LUT4                        : 13
+#      MUXF5                       : 2
+# FlipFlops/Latches                : 12
+#      FDCP                        : 6
+#      LD                          : 6
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 10
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       10  out of   4656     0%  
+ Number of Slice Flip Flops:             12  out of   9312     0%  
+ Number of 4 input LUTs:                 19  out of   9312     0%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  13  out of    232     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------+------------------------+-------+
+Clock Signal                          | Clock buffer(FF name)  | Load  |
+--------------------------------------+------------------------+-------+
+clk                                   | BUFGP                  | 6     |
+NextState_not0001(NextState_not0001:O)| NONE(*)(NextState_0)   | 6     |
+--------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+N0(XST_GND:G)                      | NONE(State_0)          | 6     |
+reset                              | IBUF                   | 6     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.769ns
+   Maximum output required time after clock: 6.681ns
+   Maximum combinational path delay: 7.266ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'NextState_not0001'
+  Total number of paths / destination ports: 21 / 5
+-------------------------------------------------------------------------
+Offset:              3.769ns (Levels of Logic = 3)
+  Source:            D<2><1> (PAD)
+  Destination:       NextState_3 (LATCH)
+  Destination Clock: NextState_not0001 falling
+
+  Data Path: D<2><1> to NextState_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.651  D_2__1_IBUF (D_2__1_IBUF)
+     LUT2:I0->O            3   0.612   0.520  NextState_mux0004<3>21 (N8)
+     LUT4:I1->O            1   0.612   0.000  NextState_mux0004<3> (NextState_mux0004<3>)
+     LD:D                      0.268          NextState_3
+    ----------------------------------------
+    Total                      3.769ns (2.598ns logic, 1.171ns route)
+                                       (68.9% logic, 31.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 18 / 2
+-------------------------------------------------------------------------
+Offset:              6.681ns (Levels of Logic = 4)
+  Source:            State_2 (FF)
+  Destination:       Yx1 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: State_2 to Yx1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q             5   0.514   0.690  State_2 (State_2)
+     LUT3:I0->O            2   0.612   0.449  Yx1_or000156 (Yx1_or000156)
+     LUT4:I1->O            1   0.612   0.000  Yx1_or000158_G (N19)
+     MUXF5:I1->O           1   0.278   0.357  Yx1_or000158 (Yx1_OBUF)
+     OBUF:I->O                 3.169          Yx1_OBUF (Yx1)
+    ----------------------------------------
+    Total                      6.681ns (5.185ns logic, 1.496ns route)
+                                       (77.6% logic, 22.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 12 / 2
+-------------------------------------------------------------------------
+Delay:               7.266ns (Levels of Logic = 5)
+  Source:            D<2><1> (PAD)
+  Destination:       Yx1 (PAD)
+
+  Data Path: D<2><1> to Yx1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.651  D_2__1_IBUF (D_2__1_IBUF)
+     LUT2:I0->O            3   0.612   0.481  NextState_mux0004<3>21 (N8)
+     LUT4:I2->O            1   0.612   0.000  Yx1_or000158_G (N19)
+     MUXF5:I1->O           1   0.278   0.357  Yx1_or000158 (Yx1_OBUF)
+     OBUF:I->O                 3.169          Yx1_OBUF (Yx1)
+    ----------------------------------------
+    Total                      7.266ns (5.777ns logic, 1.489ns route)
+                                       (79.5% logic, 20.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.25 secs
+ 
+--> 
+
+Total memory usage is 319448 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

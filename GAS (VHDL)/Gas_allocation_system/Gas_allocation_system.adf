@@ -1,0 +1,137 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=gas_allocation_system
+
+[Library]
+Gas_allocation_system=.\Gas_allocation_system.LIB
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+VerilogDirsChanged=1
+IMPL_TOOL=
+SYNTH_TOOL=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+VerilogLanguage=4
+Strict=0
+VerilogNoSpecify=0
+WarningPrnLevel=1
+ErrorOutputLimit=0
+OptimizationLevel=2
+ProtectLevel=0
+AdditionalOptions=
+
+[LocalVhdlSets]
+CompileWithDebug=1
+DisableVHDL87Key=0
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2006Key=0
+EnableVHDL2008Key=0
+NetlistCompilation=1
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+AdditionalOptions=
+IncrementalCompilation=0
+
+[$LibMap$]
+Gas_allocation_system=.
+Active_lib=
+
+[HierarchyViewer]
+SortInfo=u
+HierarchyInformation=gas_diagnostic_device|arch|0 
+ShowHide=ShowTopLevel
+Selected=
+
+[DefineMacro]
+Global=
+
+[Folders]
+Name3=Makefiles
+Directory3=I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\
+Extension3=mak
+Name4=Memory
+Directory4=I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\
+Extension5=dll
+Name6=PDF
+Directory6=I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\
+Extension6=pdf
+Name7=HTML
+Directory7=I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\
+Extension7=
+
+[Groups]
+GAS_FSM=1
+GAS_Diagnostic_Device=1
+TestBench=1
+Additional folder=1
+
+[Files]
+/Workstation.vhd=-1
+/MUX_2_in_1.vhd=-1
+/OA.vhd=-1
+/GAS_graph.asf=-1
+GAS_FSM/GAS_FSM.vhd=-1
+GAS_Diagnostic_Device/State coding.vhd=-1
+GAS_Diagnostic_Device/Bits coding.vhd=-1
+GAS_Diagnostic_Device/Shift register.vhd=-1
+TestBench/gas_dd_fsm_bits_coding.vhd=-1
+TestBench/gas_dd_fsm_bits_coding.do=-1
+TestBench/gas_dd_fsm_state_coding.vhd=-1
+TestBench/gas_dd_fsm_state_coding.do=-1
+TestBench/gas_diagnostic_device_shift_register.vhd=-1
+TestBench/gas_diagnostic_device_shift_register.do=-1
+Additional folder/array example.vhd=-1
+Additional folder/ACS_172.vhd=-1
+Additional folder/ACS_172_Standard.vhd=-1
+Additional folder/ACS_172_FSM.vhd=-1
+
+[Files.Data]
+.\src\Workstation.vhd=VHDL Source Code
+.\src\MUX_2_in_1.vhd=VHDL Source Code
+.\src\OA.vhd=VHDL Source Code
+.\src\GAS_graph.asf=State Diagram
+.\src\GAS_FSM\GAS_FSM.vhd=VHDL Source Code
+.\src\GAS_Diagnostic_Device\State coding.vhd=VHDL Source Code
+.\src\GAS_Diagnostic_Device\Bits coding.vhd=VHDL Source Code
+.\src\GAS_Diagnostic_Device\Shift register.vhd=VHDL Source Code
+.\src\TestBench\gas_dd_fsm_bits_coding.vhd=VHDL Source Code
+.\src\TestBench\gas_dd_fsm_bits_coding.do=Macro
+.\src\TestBench\gas_dd_fsm_state_coding.vhd=VHDL Source Code
+.\src\TestBench\gas_dd_fsm_state_coding.do=Macro
+.\src\TestBench\gas_diagnostic_device_shift_register.vhd=VHDL Source Code
+.\src\TestBench\gas_diagnostic_device_shift_register.do=Macro
+.\src\Additional folder\array example.vhd=VHDL Source Code
+.\src\Additional folder\ACS_172.vhd=VHDL Source Code
+.\src\Additional folder\ACS_172_Standard.vhd=VHDL Source Code
+.\src\Additional folder\ACS_172_FSM.vhd=VHDL Source Code
+
+[file_out:/GAS_graph.asf]
+/..\compile\GAS_graph.vhd=-1
+

@@ -1,0 +1,8 @@
+MESSAGE "Loading State Diagram data..."
+MESSAGE "Generating D:\HDL_designs\Diploma\Gas_allocation_system\compile\GAS_FSM.vhd from D:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf"
+MESSAGE "Synthesis attributes will be generated for Xilinx XST"
+FSM2VHDL_WARNING FSM2HDL_4028 "Attribute ENUM_ENCODING is not supported for Symbolic encoding." "D:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 5
+FSM2VHDL_WARNING FSM2HDL_3031 "Undefined value of 'Y' in the reset state. Please add an action with 'Y' as a target to the reset state or define default value for this signal/output. See comment "Initialization in the reset state or default value required!" in the generated code." "D:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 50
+MESSAGE "Generating interface file..."
+MESSAGE "HDL code generation completed. 0 error(s), 2 warning(s)"
+MESSAGE "Double-click on error/warning line to see the source of error/warning."

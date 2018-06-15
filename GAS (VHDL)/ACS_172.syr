@@ -1,0 +1,408 @@
+Release 14.1 - xst P.15xf (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.75 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.76 secs
+ 
+--> Reading design: ACS_172.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ACS_172.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ACS_172"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : ACS_172
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/HDL_designs/Diploma/ACS_172.vhd" in Library work.
+Package <heap_arr_pkgs> compiled.
+Entity <acs_172> compiled.
+Entity <acs_172> (Architecture <acs>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ACS_172> in library <work> (architecture <acs>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ACS_172> in library <work> (Architecture <acs>).
+WARNING:Xst:819 - "D:/HDL_designs/Diploma/ACS_172.vhd" line 36: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <D>
+Entity <ACS_172> analyzed. Unit <ACS_172> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ACS_172>.
+    Related source file is "D:/HDL_designs/Diploma/ACS_172.vhd".
+    Found 18-bit register for signal <DD>.
+    Found 3-bit register for signal <NextState>.
+    Found 3-bit register for signal <State>.
+    Summary:
+	inferred   6 D-type flip-flop(s).
+Unit <ACS_172> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 12
+ 1-bit register                                        : 6
+ 3-bit register                                        : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ACS_172> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block ACS_172, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ACS_172.ngr
+Top Level Output File Name         : ACS_172
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 79
+#      LUT2                        : 48
+#      LUT3                        : 7
+#      LUT3_D                      : 2
+#      LUT4                        : 22
+# FlipFlops/Latches                : 24
+#      FDCP                        : 24
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 21
+#      IBUF                        : 19
+#      OBUF                        : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       45  out of   4656     0%  
+ Number of Slice Flip Flops:             24  out of   9312     0%  
+ Number of 4 input LUTs:                 79  out of   9312     0%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    232     9%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 24    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------+------------------------+-------+
+Control Signal                             | Buffer(FF name)        | Load  |
+-------------------------------------------+------------------------+-------+
+DD_0_0__and0001(DD_0_0__and00011:O)        | NONE(DD_0_0)           | 1     |
+DD_0_0__and0002(DD_0_0__and00021:O)        | NONE(DD_0_0)           | 1     |
+DD_0_1__and0001(DD_0_1__and00011:O)        | NONE(DD_0_1)           | 1     |
+DD_0_1__and0002(DD_0_1__and00021:O)        | NONE(DD_0_1)           | 1     |
+DD_0_2__and0001(DD_0_2__and00011:O)        | NONE(DD_0_2)           | 1     |
+DD_0_2__and0002(DD_0_2__and00021:O)        | NONE(DD_0_2)           | 1     |
+DD_1_0__and0000(DD_1_0__and00001:O)        | NONE(DD_1_0)           | 1     |
+DD_1_0__and0001(DD_1_0__and00011:O)        | NONE(DD_1_0)           | 1     |
+DD_1_1__and0000(DD_1_1__and00001:O)        | NONE(DD_1_1)           | 1     |
+DD_1_1__and0001(DD_1_1__and00011:O)        | NONE(DD_1_1)           | 1     |
+DD_1_2__and0000(DD_1_2__and00001:O)        | NONE(DD_1_2)           | 1     |
+DD_1_2__and0001(DD_1_2__and00011:O)        | NONE(DD_1_2)           | 1     |
+DD_2_0__and0000(DD_2_0__and00001:O)        | NONE(DD_2_0)           | 1     |
+DD_2_0__and0001(DD_2_0__and00011:O)        | NONE(DD_2_0)           | 1     |
+DD_2_1__and0000(DD_2_1__and00001:O)        | NONE(DD_2_1)           | 1     |
+DD_2_1__and0001(DD_2_1__and00011:O)        | NONE(DD_2_1)           | 1     |
+DD_2_2__and0000(DD_2_2__and00001:O)        | NONE(DD_2_2)           | 1     |
+DD_2_2__and0001(DD_2_2__and00011:O)        | NONE(DD_2_2)           | 1     |
+DD_3_0__and0000(DD_3_0__and00001:O)        | NONE(DD_3_0)           | 1     |
+DD_3_0__and0001(DD_3_0__and00011:O)        | NONE(DD_3_0)           | 1     |
+DD_3_1__and0000(DD_3_1__and00001:O)        | NONE(DD_3_1)           | 1     |
+DD_3_1__and0001(DD_3_1__and00011:O)        | NONE(DD_3_1)           | 1     |
+DD_3_2__and0000(DD_3_2__and00001:O)        | NONE(DD_3_2)           | 1     |
+DD_3_2__and0001(DD_3_2__and00011:O)        | NONE(DD_3_2)           | 1     |
+DD_4_0__and0000(DD_4_0__and00001:O)        | NONE(DD_4_0)           | 1     |
+DD_4_0__and0001(DD_4_0__and00011:O)        | NONE(DD_4_0)           | 1     |
+DD_4_1__and0000(DD_4_1__and00001:O)        | NONE(DD_4_1)           | 1     |
+DD_4_1__and0001(DD_4_1__and00011:O)        | NONE(DD_4_1)           | 1     |
+DD_4_2__and0000(DD_4_2__and00001:O)        | NONE(DD_4_2)           | 1     |
+DD_4_2__and0001(DD_4_2__and00011:O)        | NONE(DD_4_2)           | 1     |
+DD_5_0__and0000(DD_5_0__and00001:O)        | NONE(DD_5_0)           | 1     |
+DD_5_0__and0001(DD_5_0__and00011:O)        | NONE(DD_5_0)           | 1     |
+DD_5_1__and0000(DD_5_1__and00001:O)        | NONE(DD_5_1)           | 1     |
+DD_5_1__and0001(DD_5_1__and00011:O)        | NONE(DD_5_1)           | 1     |
+DD_5_2__and0000(DD_5_2__and00001:O)        | NONE(DD_5_2)           | 1     |
+DD_5_2__and0001(DD_5_2__and00011:O)        | NONE(DD_5_2)           | 1     |
+NextState_0_and0000(NextState_0_and00001:O)| NONE(NextState_0)      | 1     |
+NextState_0_and0001(NextState_0_and00011:O)| NONE(NextState_0)      | 1     |
+NextState_1_and0000(NextState_1_and00001:O)| NONE(NextState_1)      | 1     |
+NextState_1_and0001(NextState_1_and00011:O)| NONE(NextState_1)      | 1     |
+NextState_2_and0000(NextState_2_and00001:O)| NONE(NextState_2)      | 1     |
+NextState_2_and0001(NextState_2_and00011:O)| NONE(NextState_2)      | 1     |
+State_0_and0000(State_0_and00001:O)        | NONE(State_0)          | 1     |
+State_0_and0001(State_0_and00011:O)        | NONE(State_0)          | 1     |
+State_1_and0000(State_1_and00001:O)        | NONE(State_1)          | 1     |
+State_1_and0001(State_1_and00011:O)        | NONE(State_1)          | 1     |
+State_2_and0000(State_2_and00001:O)        | NONE(State_2)          | 1     |
+State_2_and0001(State_2_and00011:O)        | NONE(State_2)          | 1     |
+-------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.513ns (Maximum Frequency: 284.697MHz)
+   Minimum input arrival time before clock: 3.136ns
+   Maximum output required time after clock: 6.297ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.513ns (frequency: 284.697MHz)
+  Total number of paths / destination ports: 93 / 24
+-------------------------------------------------------------------------
+Delay:               3.513ns (Levels of Logic = 2)
+  Source:            NextState_2 (FF)
+  Destination:       DD_5_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: NextState_2 to DD_5_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q             7   0.514   0.754  NextState_2 (NextState_2)
+     LUT3_D:I0->O         10   0.612   0.753  State_cmp_eq00001_1 (State_cmp_eq00001)
+     LUT4:I3->O            1   0.612   0.000  DD_5_mux0000<2>1 (DD_5_mux0000<2>)
+     FDCP:D                    0.268          DD_5_2
+    ----------------------------------------
+    Total                      3.513ns (2.006ns logic, 1.507ns route)
+                                       (57.1% logic, 42.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 39 / 24
+-------------------------------------------------------------------------
+Offset:              3.136ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       DD_5_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to DD_5_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            63   1.106   1.150  reset_IBUF (reset_IBUF)
+     LUT4:I1->O            1   0.612   0.000  DD_5_mux0000<2>1 (DD_5_mux0000<2>)
+     FDCP:D                    0.268          DD_5_2
+    ----------------------------------------
+    Total                      3.136ns (1.986ns logic, 1.150ns route)
+                                       (63.3% logic, 36.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 16 / 2
+-------------------------------------------------------------------------
+Offset:              6.297ns (Levels of Logic = 3)
+  Source:            NextState_0 (FF)
+  Destination:       Yx1 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: NextState_0 to Yx1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCP:C->Q             8   0.514   0.646  NextState_0 (NextState_0)
+     LUT4:I3->O            1   0.612   0.387  Yx1_SW1 (N6)
+     LUT4:I2->O            1   0.612   0.357  Yx1 (Yx1_OBUF)
+     OBUF:I->O                 3.169          Yx1_OBUF (Yx1)
+    ----------------------------------------
+    Total                      6.297ns (4.907ns logic, 1.390ns route)
+                                       (77.9% logic, 22.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 52.00 secs
+Total CPU time to Xst completion: 52.26 secs
+ 
+--> 
+
+Total memory usage is 366956 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

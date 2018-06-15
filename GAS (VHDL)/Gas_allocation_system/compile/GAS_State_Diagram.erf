@@ -1,0 +1,8 @@
+MESSAGE "Loading State Diagram data..."
+MESSAGE "Generating d:\HDL_designs\Diploma\Gas_allocation_system\compile\GAS_State_Diagram.vhd from d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_State_Diagram.asf"
+MESSAGE "Synthesis attributes will be generated for Synopsys FPGA Express"
+FSM2VHDL_WARNING FSM2HDL_4028 "Attribute ENUM_ENCODING is not supported for Symbolic encoding." "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_State_Diagram.asf" 5
+FSM2VHDL_ERROR FSM2HDL_3007 "Missing condition. Two unconditional transitions detected." "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_State_Diagram.asf" 210
+MESSAGE "HDL code generation completed. 1 error(s), 1 warning(s)"
+MESSAGE "Double-click on error/warning line to see the source of error/warning."
+MESSAGE "Serious errors detected during compilation. HDL file has not been generated."

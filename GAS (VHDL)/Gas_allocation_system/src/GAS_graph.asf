@@ -1,0 +1,123 @@
+VERSION=1.25
+HEADER
+FILE="GAS_graph.asf"
+FID=5be36162
+LANGUAGE=VHDL
+ENTITY="GAS_graph"
+ARCHITECTURE="GAS_graph_arch"
+FREEOID=97
+"LIBRARIES=library IEEE;\nuse IEEE.std_logic_1164.all;\nuse IEEE.std_logic_arith.all;\nuse IEEE.std_logic_unsigned.all;\n"
+MULTIPLEARCHSTATUS=FALSE
+SYNTHESISATTRIBUTES=TRUE
+HEADER_PARAM="AUTHOR,Lyamba007"
+HEADER_PARAM="COMPANY,NURE"
+HEADER_PARAM="CREATIONDATE,30.01.2018"
+HEADER_PARAM="TITLE,No Title"
+BLOCKTABLE_FILE="#table.asf"
+BLOCKTABLE_TEMPL="0"
+BLOCKTABLE_VISIBLE="1"
+END
+BUNDLES
+B T "Declarations" 0,0,255 0 0 1 255,255,255 0 2694 0 0000 204 "Arial" 0
+B T "Conditions" 236,0,236 0 0 0 255,255,255 0 2694 0 0110 204 "Arial" 0
+B F "States" 0,0,0 0 0 1 0,255,0 1 3527 1480 0000 204 "Arial" 0
+B T "Actions" 0,0,0 0 0 1 255,255,255 0 2694 0 0000 204 "Arial" 0
+B T "Labels" 0,0,0 0 0 0 0,0,0 0 2694 0 0000 204 "Arial" 0
+B L "Transitions" 0,0,0 0 0 1 0,0,0 1 3527 1480 0000 204 "Arial" 0
+B F "Ports" 0,0,0 0 0 1 0,255,255 1 3527 1480 0000 204 "Arial" 0
+B L "Errors" 255,0,0 0 3 1 255,255,255 1 3527 1480 0000 204 "Arial" 0
+B T "State Labels" 0,0,0 0 0 0 0,0,0 0 2694 0 0000 204 "Arial" 4
+B F "Current State" 255,255,0 0 0 1 255,255,0 1 3527 1480 0000 204 "Arial" 0
+B T "Comments" 157,157,157 0 0 1 255,255,255 0 2694 0 0000 204 "Arial" 0
+B L "Info" 0,255,0 0 3 1 255,255,255 1 3527 1480 0000 204 "Arial" 0
+B F "Junction" 0,0,0 0 0 1 255,0,0 1 3527 1480 0000 204 "Arial" 0
+B F "Initial State Indicator" 0,0,0 0 0 1 240,140,40 1 3527 1480 0000 204 "Arial" 0
+B T "Alias" 0,128,0 0 0 1 255,255,255 0 2694 0 0000 204 "Arial" 0
+B F "Delay" 0,0,0 0 0 1 180,180,180 1 3527 1480 0000 204 "Arial" 0
+END
+INSTHEADER 1
+PAGE 0,0 215900,279400
+MARGINS 12700,12700 12700,12700
+END
+OBJECTS
+F 5 0 671088640 37 0 "" 0 RECT 0,0,0 0 0 1 255,255,255 0 | 15700,15700 200200,221700
+L 6 5 0 TEXT "Labels" | 18700,218700 1 0 0 "Sreg0"
+G 7 5 0 TEXT_C 0,0,0 0 0 1 255,255,0 1 3527 1480 0000 204 "Arial" 0 | 26700,212700 1 0 0 "clk"
+G 8 5 0 TEXT_CE 0,0,0 0 0 1 255,255,0 1 3527 1480 0000 204 "Arial" 0 | 26700,203700 1 0 0 "No clock enable"
+G 1 0 0 TEXT 0,0,0 0 0 0 255,255,255 0 3527 1480 0000 204 "Arial" 0 | 97950,263700 1 0 0 "Entity: GAS_graph\nArchitecture: GAS_graph_arch"
+S 9 5 53249 ELLIPSE "States" | 46450,131400 6500 6500
+L 10 9 0 TEXT "State Labels" | 46450,131400 1 0 0 "A1"
+S 11 5 57344 ELLIPSE "States" | 60825,170914 6500 6500
+L 12 11 0 TEXT "State Labels" | 60825,170914 1 0 0 "A2"
+W 13 5 0 9 11 BEZIER "Transitions" | 48672,137507 51982,146607 55292,155707 58603,164807
+S 14 5 61440 ELLIPSE "States" | 97228,191958 6500 6500
+L 15 14 0 TEXT "State Labels" | 97228,191958 1 0 0 "A3"
+W 16 5 0 11 14 BEZIER "Transitions" | 66452,174166 74835,179012 83218,183859 91601,188706
+S 17 5 65536 ELLIPSE "States" | 138643,184693 6500 6500
+L 18 17 0 TEXT "State Labels" | 138643,184693 1 0 0 "A4"
+W 19 5 0 14 17 BEZIER "Transitions" | 103630,190835 113167,189162 122704,187489 132241,185816
+S 20 5 69632 ELLIPSE "States" | 165711,152516 6500 6500
+L 21 20 0 TEXT "State Labels" | 165711,152516 1 0 0 "A5"
+W 22 5 0 17 20 BEZIER "Transitions" | 142827,179720 149060,172310 155293,164900 161527,157489
+S 23 5 73728 ELLIPSE "States" | 165778,110469 6500 6500
+L 24 23 0 TEXT "State Labels" | 165778,110469 1 0 0 "A6"
+W 25 5 0 20 23 BEZIER "Transitions" | 165720,146618 165735,136786 165752,126447 165768,116614
+S 26 5 77824 ELLIPSE "States" | 138813,78205 6500 6500
+L 27 26 0 TEXT "State Labels" | 138813,78205 1 0 0 "A7"
+W 28 5 0 23 26 BEZIER "Transitions" | 161610,105482 155401,98052 149191,90622 142981,83192
+S 29 5 81920 ELLIPSE "States" | 66275,96943 6500 6500
+L 30 29 0 TEXT "State Labels" | 66275,96943 1 0 0 "A8"
+G 47 0 65 TEXT 0,0,0 0 0 0 255,255,255 0 3333 1398 1000 238 "Arial" 0 | 103550,29851 1 0 0 "Created:"
+G 46 0 65 TEXT 0,0,0 0 0 0 255,255,255 0 3333 1398 1000 238 "Arial" 0 | 103290,22031 1 0 0 "Title:"
+G 45 0 65 TEXT 0,0,0 0 0 0 255,255,255 0 3527 1480 0000 238 "Arial" 0 | 144190,29851 1 0 0 "$CREATIONDATE"
+G 44 0 65 TEXT 0,0,0 0 0 0 255,255,255 0 3527 1480 0000 238 "Arial" 0 | 143930,22031 1 0 0 "$TITLE"
+S 32 5 86016 ELLIPSE "States" | 102837,101760 6500 6500
+L 33 32 0 TEXT "State Labels" | 102837,101760 1 0 0 "A9"
+L 36 37 0 TEXT "Labels" | 26700,227700 1 0 0 "clk"
+I 37 0 1 Builtin InPort | 20700,227700 "" "" "" "" "" "logic"
+L 38 39 0 TEXT "Labels" | 26700,233700 1 0 0 "reset"
+I 39 0 0 Builtin InPort | 20700,233700 "" "" "" "" "" "logic"
+L 40 41 0 TEXT "Labels" | 26700,239700 1 0 0 "X[0:7]"
+I 41 0 0 Builtin InPort | 20700,239700 "" "" "" "" "" "logic"
+L 42 43 0 TEXT "Labels" | 42700,227700 1 0 0 "Y[1:14]"
+I 43 0 2 Builtin OutPort | 36700,227700 "" "" "" "" "" "logic"
+W 63 5 0 23 9 BEZIER "Transitions" | 159389,111659 129944,116939 82316,125113 52871,130393
+W 62 5 0 20 20 BEZIER "Transitions" | 169925,157463 182570,172307 190353,144224 171871,150443
+W 61 5 0 9 9 BEZIER "Transitions" | 43630,125546 35167,107978 23519,143653 40718,134463
+W 59 5 0 32 29 BEZIER "Transitions" | 96348,101395 87846,100769 80985,99492 72483,98866
+W 58 5 0 26 29 BEZIER "Transitions" | 132392,79208 115029,83951 89805,90149 72442,94892
+W 57 5 0 26 32 BEZIER "Transitions" | 133160,81413 125463,86693 115882,92786 108185,98066
+G 56 0 65 RECT_BMP_EMB 0,0,0 0 0 1 255,255,255 1 | 105050,32539 121987,48064 "KAAAADAAAAAsAAAAAQAYAAAAAADCGAAAEgsAABILAAAAAAAAAAAAAP////////////////////////////////////////////////////////////////////////38+fXt1e3gtufWoN/Hfta2WNKxSdGvP9KwQdS0S9i6Wt7GderapfXu1v79+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////379+3guuHIi97BgeHFjeTLmuXNnuXMnOLIkt/ChNm5bdKtTcujLMWaEMKVAMedFNW3TuXTkvjy4P/////////////////////////////////////////////////////////////////////////////////////////////////////////////+/fHlxufSouzaufPo1ffu4vnz6fv27vv27/v27vr17Pnw5fXr2vDgx+jUrN/Ch9OvU8ieIMKWAcKVAMmhGd/Iefr26P////////////////////////////////////////////////////////////////////////////////////////////////z58u3eufXq2Pz38f78+v/////////////////////////////////////+/vz59fjw5PDgxubOoda0YsieH8KWAMKWAMymJevdrP////////////////////////////////////////////////////////////////////////////////////////z58/fu3/36+f/////////////////////////////////////////////+/fz48v////////n06fXq2PLkzOLJltGrScSZC8KVAMOXAd7GdP79+/////////////////////////////////////////////////////////////////////////////379/z48f///v////////////////////////////////79+vnz6Pjy5f38+P///vfv4fjv4v////7+/fjx4/z69fjw4+vXtNi3a8acGMKVAMOXANi7Wfz68/////////////////////////////////////////////////////////////////////79+/78+f///////////////////////////vv37/jv4f379/379vTo0/fu3vbs2v////37+Pjx5f///v////////////////v28PDhx97AgcmgI8KVAMOXANe5U/389////////////////////////////////////////////////////////////////v/+/v///////////////////vv48P/+/f78+vPo0ffx4/Tp1f////v37/fu3vv38P///////////////////////////////v////789/Pm0uDEjMuhJ8KVAMOXANq/Y//+/f///////////////////////////////////////////////////////////v/////////////////+/vfw4fXr2Pfu3v////fw4fTp1fjw4v////////////////////////////////78+v79/P////z69Pfv4v////78+fPn0d7ChcedG8KVAMOXAOXTkv/////////////////////////////////////////////////////////////////+/vnz6Pv37////vTp1Pnx5vTo1P/+/v////379/////////////////////////////////z59PTo0vXr2P78+f/+/vbt3fz38P////379/Hiytm6csWZDMKWAMeeEPTs0P////////////////////////////////////////////////////////////r06vbt3PXq1f79+/v38PXq2Pz48v////////////////////////////////n06Pv38P////v48vXq1vr16ffu3v////r17PXq2P////////z48+3bvdOvU8OWAcOXANS1Sv/+/f////////////////////////////////////////////7+/f369f////ny5/Xr2PXr2f38+f////////////////////////////v38Pz58/////////r16/To1P////////bv3/Tq1PTq1v////79+/z69f////////////ry5+XMnsqhKMKVAMOYAu3gs/////////////////////////////////////////////79+/bt3P79+//9/Pbu3vv48f////////////////////////////r16/Ln0PPmzvv48f////////Po0vn06v/////+/vnz5/z59P/////////////////////////+/PPm0Nq6b8SYB8OWANS0R//+/f////////////////////////////////79+/v38P////bt3Pz58v////////////////////////79+/fv3/v37/////jw4vbu3vv37/Tq1f////////bs2/nz5/////////////////////////////////////////////z28OnUrs2lMsKVAMSZBPLoxv////////////////////////////////z48vbs2v38+fv27v78+f////////////////////////Xs2/Tq1/Pmzv38+f78+vPmz/Xr1/Tp1P///v////////////////////////////////////////38+vr17P/////////+/fTn1Nm4asOWA8OXAN/Hdf////////////////////////////////z58/jx4/////////////////////////fw4f359P////bu3vz48/ny5vrz6f////77+Pbu3v379/////////////////////////////////79/P79+v////r16/Tp1P359P////////r17OXMnMeeHMKVAM+rMv379v////r37vr37v/////////////////+/fXu3fj06Pj06fj06fj06fj06fLmzvDixu/hxP38+vbu3u7fwO/gxPTq1/j06fj16v////////jz6Pf05/j06Pj06Pj06Pj06Pfz5v37+Pjx4/Pmz/fw4vTs2fPo0/Po0vjz5/v58//+/u7dwM+rQ8KVAMacDfTs0P///9S3b72SJN7Jm////////////+zhxbiKJbaGF7iKHbeIGrWFFLWFFLSCDraFFLSDFNe+gb6TNrSDEbOBCrWFFLWEErWEGM+vavHo0LuNI7aHGbWFErWEErWFErWFFLF+D8+vZ+vcusCVN7aFFLWFE7WDELWEEbOBEL6TM/jz5/bs3dm3aMOVAsOWAOjXnf///+7jx7OBArWFFvv48v79/P///8OcQat1AMSfRa99ALKBCLqMJLuOJrqOJ7mMIrmMJb6UL7KABrJ/BLqOJrqNJ7uOJ7F9Bqx3ANe9fbWFD7F/BryQLLyRLLyQLLqNJLqNKL+WOL6ULax2ALJ/BrqOJ7qOJrqNJbqNJbWGId7Jl/z38+DEicWZDsKWAOHLf////////9a7d7KBAMWfS9i/g9Gya6t1AMWfRODKmat1AMmmUvfu3vr27fr37/n16/r37uzgw7F9B72RKPj06fr38Pr38Ni+gKp0AM2tXrWFD7+VLvbw4vfy5ffy5PLmzvjw4vn27cGYNq14AOLOn/r37/r37/r27vr27vn16/r27fz38+bOocieHcKVANvAZP////////r27byRIrF/AL+VMLF+Bq57Au3fwufVr6lyAMuoVfr06v////////////////Lq1rB9CL2RKv///v///////+PSpat1AM2sXbiJFbKABbuQK7yRMLyQLreIJuLNn////8OcP698AvXu3v////////////////////////779+rWr8uhKcKVANe6V////////////+PRorJ/ALqNHK97A8yrXv///+DJl6lyAMqoVv////////////////////Ho0rB9CL2SKv////z48vnv4t3Eiqt1AM6uX7iJFbSEDr+WM8GYOcGYO76UO+bVrf///8ObPK98AvXv4P////////////////////////78+ezauM2lM8KVANe6Vv////////////7+/MikSa98ALSEE/Ps2f///+HMnqlxAMqoVv////////////////////Hn0LB9CLuPI/Tt2ezcu/Ln0dCwZKt0AM6uYbaGEb2TKO3cvPPr2fTs2vPr1vv58////8OdP613AN/Jl/Xv3/Xv3/Pr1+7fwP369f/////9+u3bvM2mOMKVANi8Wv///////////////+/lzK97C9i/hf///////+LQpqVrAMekTv///////////////////+rZta56AK15ALB9BLB8ArB8A614AK14ANi+gLSDCq54ALF9BLF/CbF+CKx3BeHNnv///9CybahvAK13ALF+B7B+B6x2AcKZPP379v////79+u3aus2lNcKVANzDbP///////////////////9zGk/n27f///////+nbu7uQPNa8ff////78+fr16v///////+ratsKcQ8CWNcCXN8KaPL+WNL6TM9e9gfPr1sSfRMGaPcGaO8GZOsGZOr2TOOfXsv////bx5c6uZsGYOsCWNMCWNL2TOMypWvz48f////77+OvWscuiK8KVAOHLgP////////////////////r37//////////////+/fz58fv27/////79+/To0/37+P////fw4ffv3vTp1Pr27f79+/379v369P////////79+v79+v79+v79+v79+v79+P/+/f369v359P////z48ffw4Pny5vz58fr16v369f////z48ufPosmeHsKVAOnZof////////////////////////////////////////ny5vTp1Pv48f////jw4/jx5P////7+/Pbt3Pbt3P///v////////////////////////////////////////////////z58/To0v////////bs2fTq1/37+P////////////rz6eHFjMWaEcadEfXu1v////////////////////////////////////////nz6fjy5Pfv4P////r06fPo1P////////////////////////////////////////////////////v27/r06v////////////Xr1/z48P////v38Pnz5/////////////////br3Nq6cMOWA8+tN/38+P////////////////////////////////////////37+PTp1fXs2v////79+/38+f////////////////////////////////////379/78+f////////v38PPn0P/+/v////////Xr2Pfv4f////////////////////38+P79+u/gxdKsSsKVAODKff////////////////////////////////////////////////369v38+P////////////////////////////////////////////v48fLmzfPmz/369v////////Pp1fr17f////////v37/37+P////////////////////v27fnz6OfPo8qfIsSZCfTrz/////////////////////////////////////////////////////////////////////////////////////z69PXs2vr27v////jw4/fu3vnz5/Xr2f////////Tq1ffw4f////////////////////////////nz5/38+Pz58vLl0Ny9d8OXBta3T/7+/P/////////////////////////////////////////////////////////////////////+/fz58v////////Xr2Pbt3fTo0v369f379vPmz/jy5fPn0f///v////369v7+/P////////////////////////v38PTp1fn06fz38OnVsc+oPsOVA+/kvf////////////////////////////////////////////////////////////n06fjz6P/////+/vXr1vz48f////nz5/fu3vjw4/ft3P////r17PPo0vv27f////////////////////////////79+vfv4P78+fr27ffu3vrz6Pbs292+fcWZDNi7Wv/////////////////////////////////////////////////////////////+/vXr2PXs2fr16/////v37/Xr2P7+/v/+/vbt3fPm0Pn06f////////////////////////////////////////////fv4PXr2Pfv3v79/Pbs2vny5erUr86nOcefFffy3v////////////////////////////////////////////////////////////////r27ffv4PXp1P/9/P79+/Tp1P379v////////38+f////////////////////////////////379/Xr2Pjx4/////bt3Pjw4vfu3f////79+vLjzNi2Z8OYCOnZov////////////////////////////////////////////////////////////////////////n16vfw4f/+/f////7+/f///v/////////////////////////////+/vr16/z59P////bu3ffv3/Xq1vz69fz69fXq2P369f7+/vbr2uDDisidGd/HeP/////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/fv37v379v////jw4/Xq1/Tq1f379/v37/Xp1fbs2vz69v////////////jv4uXNn8ykL9q/Zv79+//////////////////////////////////////////////////////////////////////////////////////+/v37+P/+/v////z58/z69f////r06fTp0/Xs2fz69Pv27vXt3PXr2Pr17P////v48f369f/////////+/vjw5OfRp9CpQdzCbP79+/////////////////////////////////////////////////////////////////////////////////////////z69vTq1fjw4v379/369vXr2Pz69v78+fjw4fXs2/jz5/////v48Pv37//+/v////////////////38+PXr2ubMn9GsR+PQjP///////////////////////////////////////////////////////////////////////////////////////////////////vv48ffw4vr06v////v48fz58//////+/f379////////////////////////////////vv27vHiyeDEiti5YPHmxP///////////////////////////////////////////////////////////////////////////////////////////////////////////////v////////////////////////////////////////////////////z58vXr1+jTq93BfefVnf379f////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////7+/f769vnz6fPn0ezbuOjUqe7fuvv37f/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+/v/+/v79+/38+Pz58vv17Pnx5ffv4Pfv3/ny5vv38P///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wAA"
+G 55 0 65 LINE 0,0,0 0 0 | 97690,24111 199290,24111
+G 54 0 65 LINE 0,0,0 0 0 | 97690,31731 199290,31731
+G 53 0 65 LINE 0,0,0 0 0 | 97690,49511 199290,49511
+G 52 0 65 LINE 0,0,0 0 0 | 97690,49511 97690,16491
+G 51 0 65 LINE 0,0,0 0 0 | 125937,49268 125957,16248
+G 50 0 65 LINE 0,0,0 0 0 | 199290,49511 199290,16491
+G 49 0 65 TEXT 0,0,0 0 0 0 255,255,255 0 3333 1398 1000 238 "Arial" 0 | 130622,45082 1 0 0 "(C)ALDEC. Inc\n2260 Corporate Circle\nHenderson, NV 89074"
+G 48 0 65 LINE 0,0,0 0 0 | 199290,16491 97690,16491
+C 79 13 0 TEXT "Conditions" | 42467,155246 1 0 0 "X(0)/Y(1)"
+C 76 61 0 TEXT "Conditions" | 22928,130174 1 0 0 "~X(0)/-"
+W 75 5 0 29 9 BEZIER "Transitions" | 61249,101064 58654,103570 54684,107202 52894,110558\
+                                     51105,113914 49278,120964 48294,125170
+W 74 5 0 29 9 BEZIER "Transitions" | 59790,97379 56121,100511 51462,103712 49359,107649\
+                                     47256,111587 46819,120185 46282,124928
+W 66 5 0 32 9 BEZIER "Transitions" | 97279,105129 84123,111483 65362,122027 52206,128381
+W 65 5 0 17 9 BEZIER "Transitions" | 133104,181293 111356,169121 73832,146813 52084,134641
+W 64 5 0 14 9 BEZIER "Transitions" | 92819,187183 81363,173042 62005,150584 50549,136443
+C 95 74 0 TEXT "Conditions" | 41480,107319 1 0 0 "X(6)/-"
+C 94 75 0 TEXT "Conditions" | 54945,113750 1 0 0 "~X(6)/Y(11)"
+C 93 66 0 TEXT "Conditions" | 75130,121051 1 0 0 "~X(7)/Y(14)"
+C 92 59 0 TEXT "Conditions" | 79977,104938 1 0 0 "X(7)/Y(7)"
+C 91 58 0 TEXT "Conditions" | 91633,85591 1 0 0 "X(5)/Y(7)"
+C 90 57 0 TEXT "Conditions" | 121578,95620 1 0 0 "~X(5)/Y(13)"
+C 89 28 0 TEXT "Conditions" | 151798,92062 1 0 0 "X(4)/Y(6)"
+C 88 63 0 TEXT "Conditions" | 96122,127560 1 0 0 "~X(4)/Y(10)"
+C 87 25 0 TEXT "Conditions" | 167266,132797 1 0 0 "X(3)/Y(5)"
+C 86 62 0 TEXT "Conditions" | 179616,164815 1 0 0 "~X(3)/Y(12)"
+C 85 22 0 TEXT "Conditions" | 151003,173806 1 0 0 "X(2)/Y(4)"
+C 84 65 0 TEXT "Conditions" | 90900,168752 1 0 0 "~X(2)/Y(9)"
+C 82 64 0 TEXT "Conditions" | 67075,156281 1 0 0 "~X(1)/Y(8)"
+C 81 19 0 TEXT "Conditions" | 113036,193528 1 0 0 "X(1)/Y(3)"
+C 80 16 0 TEXT "Conditions" | 72874,185442 1 0 0 "1/Y(2)"
+END

@@ -1,0 +1,5 @@
+MESSAGE "Loading State Diagram data..."
+MESSAGE "Generating d:\HDL_designs\Diploma\Gas_allocation_system\compile\GAS_FSM_SD.vhd from d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM_SD.asf"
+MESSAGE "Synthesis attributes will be generated for Xilinx XST"
+FSM2VHDL_ERROR FSM2HDL_3001 "Missing ports" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM_SD.asf" 0
+MESSAGE "Serious errors detected during compilation. HDL file has not been generated."

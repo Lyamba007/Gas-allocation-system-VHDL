@@ -1,0 +1,14 @@
+[Version]
+Version=9.1
+[Designs]
+gas_allocation_system=.\Gas_allocation_system\Gas_allocation_system.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+gas_allocation_system=1
+[Settings]
+Active=gas_allocation_system

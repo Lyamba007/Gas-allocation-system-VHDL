@@ -1,0 +1,39 @@
+MESSAGE "Generating testbench for file: d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf"
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(0)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 15
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(1)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 18
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(2)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 21
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(3)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 24
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(4)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 27
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(5)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 30
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(6)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 33
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(7)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 71
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(8)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 76
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(11)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 83
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(9)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 88
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(12)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 93
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(10)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 96
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'operable<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 102
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(4)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 106
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(11)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 109
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(6)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 112
+WARNING ASFTEST_401 " ';' expected at the end of statement: 'Y(13)<= '1''" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 115
+WARNING ASFTEST_649 "ASFTEST (v.2.1.3 build 56, August 25, 2005) does not support full STD_LOGIC type, testbench may be incorrect" "d:\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM.asf" 44
+MESSAGE " Generating testbench using strategy 1..."
+MESSAGE "Test quality for strategy 1 :"
+MESSAGE " States      : 100.00 %"
+MESSAGE " Transitions : 52.38 %"
+MESSAGE " Test length : 11"
+MESSAGE " Time        :   0.1 sec."
+MESSAGE " Generating testbench using strategy 2..."
+MESSAGE "Test quality for strategy 2 :"
+MESSAGE " States      : 100.00 %"
+MESSAGE " Transitions : 100.00 %"
+MESSAGE " Test length : 43"
+MESSAGE " Time        :   0.1 sec."
+MESSAGE " Generating testbench using strategy 3..."
+MESSAGE "Test quality for strategy 3 :"
+MESSAGE " States      : 100.00 %"
+MESSAGE " Transitions : 52.38 %"
+MESSAGE " Test length : 59"
+MESSAGE " Time        :   0.1 sec."
+MESSAGE "FSM testbench generation completed. 0 error(s), 19 warning(s)"

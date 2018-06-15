@@ -1,0 +1,7 @@
+MESSAGE "Loading State Diagram data..."
+MESSAGE "Generating I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\compile\GAS_graph.vhd from I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_graph.asf"
+MESSAGE "Synthesis attributes will be generated for Xilinx XST"
+FSM2VHDL_WARNING FSM2HDL_4028 "Attribute ENUM_ENCODING is not supported for Symbolic encoding." "I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_graph.asf" 5
+MESSAGE "Generating interface file..."
+MESSAGE "HDL code generation completed. 0 error(s), 1 warning(s)"
+MESSAGE "Double-click on error/warning line to see the source of error/warning."

@@ -1,0 +1,227 @@
+[General]
+CurrentVersion=103
+[COMPILESTATUS|.\src\GAS_state_diagram.asf]
+FileTimeLow=30635093
+Status=Compiled
+[CACHEDOC|Aldec.Project.Generic.7|.\Gas_allocation_system\Gas_allocation_system.adf|]
+Path=
+[COMPILESTATUS|.\compile\GAS_State_Diagram.vhd]
+FileTimeLow=30635093
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_FSM.asf]
+FileTimeLow=30635276
+Status=Compiled
+[COMPILESTATUS|.\compile\GAS_FSM.vhd]
+FileTimeLow=30635276
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_FSM_TB\GAS_FSM_tb1.do]
+FileTimeLow=30635114
+Status=Modified
+[COMPILESTATUS|.\src\GAS_FSM_TB\GAS_FSM_tb1.vhd]
+FileTimeLow=30635114
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_FSM_TB\GAS_FSM_tb2.do]
+FileTimeLow=30635114
+Status=Modified
+[COMPILESTATUS|.\src\GAS_FSM_TB\GAS_FSM_tb2.vhd]
+FileTimeLow=30635114
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_FSM_TB\GAS_FSM_tb3.do]
+FileTimeLow=30635114
+Status=Modified
+[COMPILESTATUS|.\src\GAS_FSM_TB\GAS_FSM_tb3.vhd]
+FileTimeLow=30635114
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_FSM.vhd]
+FileTimeLow=30635296
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_graph.asf]
+FileTimeLow=30644858
+Status=Error
+[COMPILESTATUS|.\compile\GAS_graph.vhd]
+FileTimeLow=30672057
+Status=Error
+[COMPILESTATUS|.\src\TestBench\gas_fsm_TB.vhd]
+FileTimeLow=30635297
+Status=Error
+[COMPILESTATUS|.\src\TestBench\gas_fsm_TB_runtest.do]
+FileTimeLow=30635284
+Status=Modified
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\Gas_allocation_system\src\TestBench\gas_fsm_TB.vhd|]
+CurrentLine=77
+CurrentColumn=10
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=2C0000000000000001000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDA0000005F000000560500003D020000000000000000000005000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000C8000000C80000000000000000000000C8000000C800000000000000000000000000000000000000090000000100000020
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\Gas_allocation_system\src\GAS_FSM_TB\GAS_FSM_tb1.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=2C0000000000000003000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDA0000005F000000560500003D020000000000000000000005000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000C8000000C80000000000000000000000C8000000C800000000000000000000000000000000000000090000000100000022
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\Gas_allocation_system\src\GAS_FSM.vhd|]
+CurrentLine=73
+CurrentColumn=56
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=2C0000000000000001000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDA0000005F000000560500003D020000000000000000000005000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000C8000000C80000000000000000000000C8000000C800000000000000000000000000000000000000090000000100000020
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device.vhd]
+FileTimeLow=30635297
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_FSM and TB\gas_fsm_TB.vhd]
+FileTimeLow=30635415
+Status=Error
+[COMPILESTATUS|.\src\GAS_FSM and TB\gas_fsm_TB_runtest.do]
+FileTimeLow=30635284
+Status=Modified
+[COMPILESTATUS|.\src\GAS_FSM and TB\GAS_FSM.vhd]
+FileTimeLow=30646673
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device and TB\GAS_Diagnostic_Device.vhd]
+FileTimeLow=30646690
+Status=Compiled
+[COMPILESTATUS|.\src\Workstation.vhd]
+FileTimeLow=30646679
+Status=Compiled
+[COMPILESTATUS|.\src\MUX_2_in_1.vhd]
+FileTimeLow=30635305
+Status=Compiled
+[COMPILESTATUS|.\src\OA.vhd]
+FileTimeLow=30635308
+Status=Compiled
+[COMPILESTATUS|.\src\array example.vhd]
+FileTimeLow=30638102
+Status=Compiled
+[CACHEDOC|Aldec.Hde.HdePlugIn.7|.\Gas_allocation_system\src\GAS_Diagnostic_Device and TB\GAS_Diagnostic_Device.vhd|]
+CurrentLine=78
+CurrentColumn=46
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-14
+Frame=0
+WindowWorkspaceInfo=2C0000000000000003000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDA0000005F000000560500003D020000000000000000000005000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000C8000000C80000000000000000000000C8000000C800000000000000000000000000000000000000090000000100000022
+[COMPILESTATUS|.\src\ACS_172.vhd]
+FileTimeLow=30642315
+Status=Compiled
+[COMPILESTATUS|.\src\ACS_172_Standard.vhd]
+FileTimeLow=30641945
+Status=Compiled
+[COMPILESTATUS|.\src\ACS_FSM.vhd]
+FileTimeLow=30643249
+Status=Modified
+[COMPILESTATUS|.\src\ACS_172_FSM.vhd]
+FileTimeLow=30643250
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_DD_FSM.vhd]
+FileTimeLow=30643292
+Status=Modified
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device and TB\GAS_DD_FSM.vhd]
+FileTimeLow=30646571
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_FSM and TB\as_fsm_TB.vhd]
+FileTimeLow=30635415
+Status=Error
+[COMPILESTATUS|.\src\GAS_DD_Listing_3.vhd]
+FileTimeLow=30644702
+Status=Modified
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device and TB\GAS_DD_Listing_3.vhd]
+FileTimeLow=30646571
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\gas_dd_fsm_TB.vhd]
+FileTimeLow=30646568
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\gas_dd_fsm_TB_runtest.do]
+FileTimeLow=30644705
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\gas_dd_fsm_listing_3_TB.vhd]
+FileTimeLow=30644724
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\gas_dd_fsm_listing_3_TB_runtest.do]
+FileTimeLow=30644723
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\gas_diagnostic_device_TB.vhd]
+FileTimeLow=30646579
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\gas_diagnostic_device_TB_runtest.do]
+FileTimeLow=30646579
+Status=Modified
+[COMPILESTATUS|.\src\GAS_FSM_SD.asf]
+FileTimeLow=30644739
+Status=Error
+[COMPILESTATUS|.\src\GAS_FSM\GAS_FSM.vhd]
+FileTimeLow=30646673
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device and TB\Bits coding]
+FileTimeLow=30646571
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device and TB\State coding]
+FileTimeLow=30646571
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device and TB\Shift register.vhd]
+FileTimeLow=30646690
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device and TB\Bits coding.vhd]
+FileTimeLow=30646571
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device and TB\State coding.vhd]
+FileTimeLow=30646571
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device\State coding.vhd]
+FileTimeLow=30646571
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device\Bits coding.vhd]
+FileTimeLow=30672057
+Status=Compiled
+[COMPILESTATUS|.\src\GAS_Diagnostic_Device\Shift register.vhd]
+FileTimeLow=30646690
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\gas_dd_fsm_state_coding.vhd]
+FileTimeLow=30644724
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\gas_dd_fsm_bits_coding.vhd]
+FileTimeLow=30646568
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\gas_dd_fsm_bits_coding.do]
+FileTimeLow=30644705
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\gas_dd_fsm_state_coding.do]
+FileTimeLow=30644723
+Status=Modified
+[COMPILESTATUS|.\src\TestBench\gas_diagnostic_device_shift_register.vhd]
+FileTimeLow=30646579
+Status=Compiled
+[COMPILESTATUS|.\src\TestBench\gas_diagnostic_device_shift_register.do]
+FileTimeLow=30646579
+Status=Modified
+[COMPILESTATUS|.\src\Additional folder\array example.vhd]
+FileTimeLow=30638102
+Status=Compiled
+[COMPILESTATUS|.\src\Additional folder\ACS_172.vhd]
+FileTimeLow=30642315
+Status=Compiled
+[COMPILESTATUS|.\src\Additional folder\ACS_172_Standard.vhd]
+FileTimeLow=30641945
+Status=Compiled
+[COMPILESTATUS|.\src\Additional folder\ACS_172_FSM.vhd]
+FileTimeLow=30643250
+Status=Compiled
+[CACHESIMPLE|Aldec.DebuggerPlugIn.DebuggerPlugIn.7]
+WI0=/GAS_Diagnostic_Device/State
+WI1=/GAS_Diagnostic_Device/NextState
+WI2=/GAS_Diagnostic_Device/DD
+[Gui config]
+RunFor=100 ns
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\Gas_allocation_system\src\GAS_Diagnostic_Device and TB\Bits coding.vhd|]
+CurrentLine=0
+CurrentColumn=0
+Bookmarks=-1
+BookmarksLength=3
+CurrentFontSize=-13
+Frame=0
+WindowWorkspaceInfo=2C0000000000000001000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF060200007A0000005605000011020000000000000000000005000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000C8000000C80000000000000000000000C8000000C80000000000000000000000000000000000000009000000010000003D

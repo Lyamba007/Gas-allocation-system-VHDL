@@ -1,0 +1,79 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.2 [s].
+# Design Explorer: Shortcut to "I:\DISK D\HDL_designs\Diploma\Diploma.aws" design added.
+# Design: Design "Gas_allocation_system" has been set as active.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# Warning: Different Synthesis Tools selected for Design Flow and State Diagram Editor.
+# Warning: Synthesis Tool selected for State Diagram Editor can be changed by using the FSM Code Generation Settings option.
+acom -dbg -work gas_allocation_system -2002  $dsn/src/Workstation.vhd $dsn/src/MUX_2_in_1.vhd $dsn/src/OA.vhd "$dsn/src/array example.vhd" $dsn/src/ACS_172.vhd $dsn/src/ACS_172_Standard.vhd $dsn/src/ACS_172_FSM.vhd $dsn/src/GAS_graph.asf $dsn/src/GAS_FSM/GAS_FSM.vhd "$dsn/src/GAS_Diagnostic_Device/State coding.vhd" "$dsn/src/GAS_Diagnostic_Device/Bits coding.vhd" "$dsn/src/GAS_Diagnostic_Device/Shift register.vhd" $dsn/src/TestBench/gas_dd_fsm_bits_coding.vhd $dsn/src/TestBench/gas_dd_fsm_state_coding.vhd $dsn/src/TestBench/gas_diagnostic_device_shift_register.vhd
+# Compile...
+# Loading State Diagram data...
+# Generating I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\compile\GAS_graph.vhd from I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_graph.asf
+# Synthesis attributes will be generated for Xilinx XST
+# Warning: FSM2HDL_4028 GAS_graph.asf : Attribute ENUM_ENCODING is not supported for Symbolic encoding.
+# Generating interface file...
+# HDL code generation completed. 0 error(s), 1 warning(s)
+# Double-click on error/warning line to see the source of error/warning.
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\Workstation.vhd
+# Compile Entity "Workstation"
+# Compile Architecture "Workstation" of Entity "Workstation"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\MUX_2_in_1.vhd
+# Compile Entity "MUX_2_in_1"
+# Compile Architecture "arch" of Entity "MUX_2_in_1"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\OA.vhd
+# Compile Entity "OA"
+# Compile Architecture "arch" of Entity "OA"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\array example.vhd
+# Compile Package "heap_arr_pkg"
+# Compile Entity "example"
+# Compile Architecture "arch" of Entity "example"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\ACS_172.vhd
+# Compile Package "heap_arr_pkgs"
+# Compile Entity "ACS_172"
+# Compile Architecture "ACS" of Entity "ACS_172"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\ACS_172_Standard.vhd
+# Compile Package "heap_arr_pkg"
+# Compile Entity "ACS_172_Standard"
+# Compile Architecture "arch" of Entity "ACS_172_Standard"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\ACS_172_FSM.vhd
+# Compile Entity "ACS_172_FSM"
+# Compile Architecture "arch" of Entity "ACS_172_FSM"
+# File: .\GAS_graph.vhd
+# Compile Entity "GAS_graph"
+# Compile Architecture "GAS_graph_arch" of Entity "GAS_graph"
+# Error: COMP96_0036: GAS_graph.asf(GAS_graph.vhd) : (77, 10): Boolean expression expected.
+# Error: COMP96_0019: GAS_graph.asf(GAS_graph.vhd) : (79, 8): Keyword 'case' expected.
+# Error: COMP96_0036: GAS_graph.asf(GAS_graph.vhd) : (79, 10): Boolean expression expected.
+# Error: COMP96_0019: GAS_graph.asf(GAS_graph.vhd) : (80, 3): Keyword 'end' expected.
+# Error: COMP96_0015: GAS_graph.asf(GAS_graph.vhd) : (83, 8): ';' expected.
+# Error: COMP96_0016: GAS_graph.asf(GAS_graph.vhd) : (83, 10): Design unit declaration expected.
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_FSM\GAS_FSM.vhd
+# Compile Entity "GAS_FSM"
+# Compile Architecture "GAS_FSM_arch" of Entity "GAS_FSM"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_Diagnostic_Device\State coding.vhd
+# Compile Package "heap_arr_pkg"
+# Compile Entity "GAS_DD_Listing3"
+# Compile Architecture "arch" of Entity "GAS_DD_Listing3"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_Diagnostic_Device\Bits coding.vhd
+# Compile Entity "GAS_DD_FSM"
+# Compile Architecture "arch" of Entity "GAS_DD_FSM"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\GAS_Diagnostic_Device\Shift register.vhd
+# Compile Package "heap_arr_pkg"
+# Compile Entity "GAS_Diagnostic_Device"
+# Compile Architecture "arch" of Entity "GAS_Diagnostic_Device"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\TestBench\gas_dd_fsm_bits_coding.vhd
+# Compile Entity "gas_dd_fsm_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "gas_dd_fsm_tb"
+# Compile Configuration "TESTBENCH_FOR_gas_dd_fsm"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\TestBench\gas_dd_fsm_state_coding.vhd
+# Compile Entity "gas_dd_fsm_listing_3_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "gas_dd_fsm_listing_3_tb"
+# Compile Configuration "TESTBENCH_FOR_gas_dd_fsm_listing_3"
+# File: I:\DISK D\HDL_designs\Diploma\Gas_allocation_system\src\TestBench\gas_diagnostic_device_shift_register.vhd
+# Compile Entity "gas_diagnostic_device_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "gas_diagnostic_device_tb"
+# Compile Configuration "TESTBENCH_FOR_gas_diagnostic_device"
+# Compile failure 6 Errors 0 Warnings  Analysis time :  2.0 [s]
+# Warning: Different Synthesis Tools selected for Design Flow and State Diagram Editor.
+# Warning: Synthesis Tool selected for State Diagram Editor can be changed by using the FSM Code Generation Settings option.
